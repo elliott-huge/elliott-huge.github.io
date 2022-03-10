@@ -1,0 +1,5 @@
+defaults:
+  - scope:
+      path: "res/reactionimages"
+    values:
+      image: true
