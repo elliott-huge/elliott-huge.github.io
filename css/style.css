@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Oxygen', sans-serif;
+    src: "https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap";
+}
+@font-face {
+    font-family: 'IBM Plex Mono', monospace;
+    src: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Oxygen:wght@700&display=swap";
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    min-height: 100%;
+}
+
+.content {
+    min-height: 95vh;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1145px) {
+    .content{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+h1, h2, h3, p, li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    line-height: 1;
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.2;
+    font-size: 19px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:before {
+    font-family: 'IBM Plex Mono', monospace;
+    content: '>';
+    margin-right: 0.5rem;
+}
+
+li {
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+a {
+    color: #3657ba;
+}
+
+a:hover {
+    color: #151e82;
+    text-decoration-thickness: 3px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-right: 12vw;
+}
+
+nav a {
+    font-size:            large;
+    font-family:          'Oxygen', sans-serif;
+    text-decoration:      none;
+    color:              rgb(14, 14, 14);
+    background-color:   rgb(226, 226, 226);
+    font-size: 2rem;
+
+    /* -moz-box-shadow:      inset 0 0 5px #ffffff;
+    -webkit-box-shadow:   inset 0 0 5px #ffffff;
+    box-shadow:           inset 0 0 5px #ffffff; */
+    transition: background-color 0.3s ease-in-out,
+     color 0.3s ease-in-out,
+     -moz-box-shadow 0.5s ease-in-out,
+     -webkit-box-shadow 0.5s ease-in-out,
+     box-shadow 0.5s ease-in-out;
+
+    text-align: center;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 0 0 15px 15px;
+}
+
+nav a:hover {
+    background-color:   rgb(49, 49, 49);
+    color:              rgb(240, 240, 240);
+    -moz-box-shadow:      inset 0 0 10px #000000;
+    -webkit-box-shadow:   inset 0 0 10px #000000;
+    box-shadow:           inset 0 0 10px #000000;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 20vh;
+    background-color: rgb(0, 0, 0);
+    padding: 5vh 20vw;
+}
+
+footer a, footer p {
+    color: rgb(153, 153, 153);
+    line-height: 1.3;
+}
+
+footer a:hover {
+    color:rgb(226, 226, 226);
+}
+
+footer div {
+    width: 200px;
+}
+
+footer img {
+    opacity: 50%;
+    height: 32px;
+    padding-top: 40px
+}
+
+footer img:hover {
+    opacity: 85%;
+}

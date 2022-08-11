@@ -1,0 +1,26 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../res/icon.ico"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <meta name="description" content="A collection of reaction images are here."/>
+        <title>Elliott - Reaction Images</title>
+    </head>
+    <body>
+        {% include navigation.html %}
+        <h1>They say a picture is worth a thousand words...</h1>
+        <div class="content">
+            <div id="imageroll">
+            {% assign image_files = site.static_files | where: "image", true %}
+            {% for myimage in image_files %}
+                <img src="{{ site.baseurl }}{{ myimage.path }}" alt="reaction image"/>
+            {% endfor %}
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
