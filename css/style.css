@@ -7,6 +7,7 @@
     src: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Oxygen:wght@700&display=swap";
 }
 
+
 /* ==General== */
 
 h1, h2, h3, p, li {
@@ -60,6 +61,7 @@ a:hover {
     text-decoration-thickness: 3px;
 }
 
+
 /* ==Structural== */
 
 .content {
@@ -77,6 +79,7 @@ a:hover {
     max-width: 33.333%;
 }
 
+
 /* ==Nav Elements== */
 
 nav {
@@ -91,7 +94,7 @@ nav a {
     font-family:          'Oxygen', sans-serif;
     text-decoration:      none;
     color:              rgb(14, 14, 14);
-    background-color:   rgb(226, 226, 226);
+    background-color:   rgb(224, 224, 224);
     font-size: 2rem;
 
     /* -moz-box-shadow:      inset 0 0 5px #ffffff;
@@ -116,6 +119,7 @@ nav a:hover {
     -webkit-box-shadow:   inset 0 0 10px #000000;
     box-shadow:           inset 0 0 10px #000000;
 }
+
 
 /* ==Footer Elements== */
 
@@ -169,6 +173,7 @@ footer {
 #social-media {
     text-align: center;
 }
+
 
 /* ==Other== */
 
