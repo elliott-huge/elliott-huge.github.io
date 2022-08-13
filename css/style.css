@@ -7,43 +7,18 @@
     src: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Oxygen:wght@700&display=swap";
 }
 
-body {
-    background-color: rgb(224, 224, 224);
-    margin: 0;
-    min-height: 100%;
-}
-
-#imageroll {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 15vw;
-}
-
-#imageroll img {
-    object-fit: cover;
-    height: 120px;
-    width: 120px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.content {
-    min-height: 95vh;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-@media (max-width: 1145px) {
-    .content{
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-}
+/* ==General== */
 
 h1, h2, h3, p, li {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
     font-size: 1rem;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    min-height: 100%;
 }
 
 h1 {
@@ -64,15 +39,16 @@ ul {
     list-style-type: none;
 }
 
+li {
+    line-height: 1.2;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
 li:before {
     font-family: 'IBM Plex Mono', monospace;
     content: '>';
     margin-right: 0.5rem;
-}
-
-li {
-    line-height: 1.5;
-    font-size: 19px;
 }
 
 a {
@@ -80,9 +56,52 @@ a {
 }
 
 a:hover {
-    color: #151e82;
+    color: #202667;
     text-decoration-thickness: 3px;
 }
+
+/* ==Structural== */
+
+.content {
+    min-height: 95vh;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two-thirds-container {
+    max-width: 66.666%;
+}
+
+.one-third-container {
+    max-width: 33.333%;
+}
+
+/* ==Screen Size Queries== */
+
+@media (max-width: 1145px) {
+    .content {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .two-thirds-container, .one-third-container {
+        max-width: none;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
+    ul {
+        padding-inline-start: 15px;
+    }
+}
+
+
+/* ==Nav Elements== */
 
 nav {
     display: flex;
@@ -123,13 +142,7 @@ nav a:hover {
     box-shadow:           inset 0 0 10px #000000;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    min-height: 20vh;
-    background-color: rgb(0, 0, 0);
-    padding: 5vh 20vw;
-}
+/* ==Footer Elements== */
 
 footer a, footer p {
     color: rgb(153, 153, 153);
@@ -138,6 +151,14 @@ footer a, footer p {
 
 footer a:hover {
     color:rgb(226, 226, 226);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 20vh;
+    background-color: rgb(0, 0, 0);
+    padding: 5vh 20vw;
 }
 
 footer div {
@@ -152,4 +173,20 @@ footer img {
 
 footer img:hover {
     opacity: 85%;
+}
+
+/* ==Other== */
+
+#image-roll {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15vw;
+}
+
+#image-roll img {
+    object-fit: cover;
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }

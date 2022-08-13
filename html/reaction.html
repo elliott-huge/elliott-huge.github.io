@@ -13,12 +13,14 @@
     <body>
         {% include navigation.html %}
         <div class="content">
-            <h1>They Say a Picture is Worth a Thousand Words...</h1>
-            <div id="imageroll">
-            {% assign image_files = site.static_files | where: "image", true %}
-            {% for myimage in image_files %}
-                <img src="{{ site.baseurl }}{{ myimage.path }}" alt="reaction image"/>
-            {% endfor %}
+            <div class="two-thirds-container">
+                <h1>They Say a Picture is Worth a Thousand Words...</h1>
+                <div id="image-roll">
+                {% assign image_files = site.static_files | where: "image", true %}
+                {% for myimage in image_files %}
+                    <img src="{{ site.baseurl }}{{ myimage.path }}" alt="reaction image"/>
+                {% endfor %}
+                </div>
             </div>
         </div>
         {% include footer.html %}
