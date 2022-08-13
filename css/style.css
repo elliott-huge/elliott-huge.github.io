@@ -175,7 +175,6 @@ footer {
 #image-roll {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 15vw;
 }
 
 #image-roll img {
@@ -195,7 +194,20 @@ footer {
     }
 }
 
+@media (max-width: 960px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav a {
+        flex-basis: 40%;
+    }
+}
+
 @media (max-width: 640px) {
+    .nav a {
+        flex-basis: 51%;
+    }
+
     .two-thirds-container, .one-third-container {
         max-width: none;
     }
@@ -207,7 +219,8 @@ footer {
     ul {
         padding-inline-start: 15px;
     }
+
     #image-roll {
-        text-align: center;
+        justify-content: center;
     }
 }
