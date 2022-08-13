@@ -195,16 +195,16 @@ footer {
 }
 
 @media (max-width: 960px) {
-    .nav {
+    nav {
         justify-content: center;
     }
-    .nav a {
+    nav a {
         flex-basis: 40%;
     }
 }
 
 @media (max-width: 640px) {
-    .nav a {
+    nav a {
         flex-basis: 51%;
     }
 
