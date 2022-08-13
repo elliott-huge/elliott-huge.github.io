@@ -144,15 +144,6 @@ nav a:hover {
 
 /* ==Footer Elements== */
 
-footer a, footer p {
-    color: rgb(153, 153, 153);
-    line-height: 1.3;
-}
-
-footer a:hover {
-    color:rgb(226, 226, 226);
-}
-
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -162,18 +153,40 @@ footer {
     padding: 5vh 20vw;
 }
 
-footer div {
+footer a, footer p, footer li {
+    color: rgb(153, 153, 153);
+}
+
+footer ul {
+    padding-inline-start: 15px;
+}
+
+footer a:hover {
+    color:rgb(226, 226, 226);
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column {
     width: 300px;
 }
 
-footer img {
+.footer-column img {
     opacity: 50%;
     height: 32px;
-    padding-top: 40px
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-footer img:hover {
+.footer-column img:hover {
     opacity: 85%;
+}
+
+#social-media {
+    text-align: right;
 }
 
 /* ==Other== */
