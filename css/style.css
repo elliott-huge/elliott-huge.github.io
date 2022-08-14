@@ -34,6 +34,8 @@ h2 {
 p {
     line-height: 1.2;
     font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -61,6 +63,18 @@ a:hover {
     text-decoration-thickness: 3px;
 }
 
+h1 a:hover{
+    text-decoration-thickness: 5px;
+}
+
+h2 a:hover {
+    text-decoration-thickness: 4px;
+}
+
+h1 + p {
+    margin-top: 0px;
+}
+
 
 /* ==Structural== */
 
@@ -72,11 +86,18 @@ a:hover {
 }
 
 .two-thirds-container {
-    max-width: 66.666%;
+    display: inline-block;
+    width: 66%;
 }
 
 .one-third-container {
-    max-width: 33.333%;
+    display: inline-block;
+    width: 33%;
+}
+
+.related-content-block {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -190,6 +211,7 @@ footer {
     margin-bottom: 10px;
 }
 
+
 /* ==Screen Size Queries== */
 
 @media (max-width: 1145px) {
@@ -214,7 +236,7 @@ footer {
     }
 
     .two-thirds-container, .one-third-container {
-        max-width: none;
+        width: 100%;
     }
 
     p, li {
