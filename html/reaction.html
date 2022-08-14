@@ -8,19 +8,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="../res/icon.ico"/>
         <link rel="stylesheet" href="../css/style.css"/>
-        <meta name="description" content="A collection of reaction images are here."/>
-        <title>Elliott - Reaction Images</title>
+        <meta name="description" content="A collection of reaction images"/>
+        <title>Reaction Images</title>
     </head>
     <body>
         <div class="content">
             {% include navigation.html %}
             <div class="two-thirds-container">
-                <h1>They Say a Picture is Worth a Thousand Words...</h1>
-                <div id="image-roll">
-                {% assign image_files = site.static_files | where: "image", true %}
-                {% for myimage in image_files %}
-                    <img src="{{ site.baseurl }}{{ myimage.path }}" alt="reaction image"/>
-                {% endfor %}
+                <div class="text-content-block">
+                    <h1>They Say a Picture is Worth a Thousand Words...</h1>
+                    <div id="image-roll">
+                    {% assign image_files = site.static_files | where: "image", true %}
+                    {% for myimage in image_files %}
+                        <img src="{{ site.baseurl }}{{ myimage.path }}" alt="reaction image"/>
+                    {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

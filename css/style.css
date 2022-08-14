@@ -97,6 +97,10 @@ h1 + p {
     width: 33%;
 }
 
+.text-content-block {
+    padding: 0 15px;
+}
+
 .related-content-block {
     padding: 50px 15px 0 15px;
 }
