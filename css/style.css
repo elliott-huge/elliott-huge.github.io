@@ -87,17 +87,18 @@ h1 + p {
 
 .two-thirds-container {
     display: inline-block;
+    vertical-align: top;
     width: 66%;
 }
 
 .one-third-container {
     display: inline-block;
+    vertical-align: top;
     width: 33%;
 }
 
 .related-content-block {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 50px 15px 0 15px;
 }
 
 
