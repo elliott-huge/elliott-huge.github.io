@@ -1,5 +1,6 @@
-https://www.elliotthuge.dev/html/audiophile
+https://www.elliotthuge.dev/html/index
 https://www.elliotthuge.dev/html/projects
 https://www.elliotthuge.dev/html/contact
-https://www.elliotthuge.dev/html/index
+https://www.elliotthuge.dev/html/this_website
+https://www.elliotthuge.dev/html/audiophile
 https://www.elliotthuge.dev/html/reaction
