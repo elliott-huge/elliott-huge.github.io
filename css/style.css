@@ -215,6 +215,9 @@ footer {
 }
 
 @media (max-width: 640px) {
+    nav a {
+        flex-basis: 40%;
+    }
 
     .two-thirds-container, .one-third-container {
         width: 100%;
