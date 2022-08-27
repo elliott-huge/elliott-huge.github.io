@@ -115,13 +115,14 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
+    background-color: #111;
 }
 
 nav a {
     font-size: large;
     font-family: 'Oxygen', sans-serif;
     text-decoration: none;
-    color: rgb(14, 14, 14);
+    color: #ddd;
     font-size: 2rem;
 
     text-align: center;
@@ -130,6 +131,7 @@ nav a {
 }
 
 nav a:hover {
+    color: #eee;
     text-decoration: underline;
 }
 
@@ -138,7 +140,7 @@ nav a:hover {
 
 footer {
     min-height: 20vh;
-    background-color: rgb(0, 0, 0);
+    background-color: #111;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
