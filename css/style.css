@@ -83,6 +83,8 @@ h1 + p {
 a:focus {
     background-color: yellow;
     color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 
