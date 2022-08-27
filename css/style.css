@@ -255,5 +255,4 @@ footer {
 .content ::selection {
     background-color: yellow;
     color: black;
-    text-decoration: underline;
 }
