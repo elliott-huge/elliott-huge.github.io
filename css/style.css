@@ -143,6 +143,7 @@ nav a:hover {
 footer {
     min-height: 20vh;
     background-color: #111;
+    padding-top: 20px;
 }
 
 .footer-content {
