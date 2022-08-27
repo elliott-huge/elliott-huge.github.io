@@ -207,13 +207,6 @@ footer {
 
 /* ==Screen Size Queries== */
 
-@media (max-width: 1145px) {
-    .content {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-}
-
 @media (max-width: 640px) {
     nav a {
         flex-basis: 40%;
