@@ -245,14 +245,14 @@ footer {
 
 /* ==Accessibility== */
 
-content a:focus {
+.content a:focus {
     background-color: yellow;
     color: black;
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
 
-content ::selection {
+.content ::selection {
     background-color: yellow;
     color: black;
     text-decoration: underline;
