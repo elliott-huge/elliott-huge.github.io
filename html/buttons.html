@@ -1,0 +1,59 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../res/icon.png"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/buttons.css"/>
+        <meta name="description" content="A library of CSS buttons"/>
+        <title>Elliott's Button Library</title>
+    </head>
+    <body>
+        {% include navigation.html %}
+        <div class="content">
+            <div class="two-thirds-container">
+                <div class="text-content-block">
+                    <h1>A Button Library</h1>
+                    <h2>1. Square, Depressible</h2>
+                    <p>
+                        I first saw this minimalist button on <a href="https://www.gov.uk/">gov.uk</a>, finding its skeuomorphic downward 'movement' quite satisfying.
+                    </p>
+                    <div class="button-container">
+                        <button class="lib-button" id="button-one">Click Me</button>
+                    </div>
+                    <p>
+                        This effect is achieved as follows:
+                    </p>
+                    <pre>
+                        <code>
+#button-one {
+    border: solid black 1px;
+    border-bottom: 6px black solid;
+}
+
+#button-one:active {
+    border-bottom: 2px black solid;
+    transform: translateY(4px);
+}
+                        </code>
+                    </pre>
+                    <p>
+                        Take care when changing live border values such as with <code>:hover</code> or <code>:active</code>, as this can bump neighbouring block elements around.
+                    </p>
+                </div>
+            </div>
+            <div class="one-third-container">
+                <div class="related-content-block">
+                    <h2>Similar Content</h2>
+                    <ul>
+                        <li><a href="/html/this_website">The rationale behind this website's design</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
