@@ -35,12 +35,60 @@
 
 #button-one:active {
     border-bottom: 2px black solid;
-    transform: translateY(4px);
+    transform: translateY(2px);
 }
                     </code></pre>
                     <p>
                         Take care when changing live border values such as with <code>:hover</code> or <code>:active</code>, as this can bump neighbouring block elements around.
                     </p>
+                    <h2>2. Square, Presents on Hover, Depressible</h2>
+                    <p>
+                        An adaptation of gov.uk's design which distinguishes a hovered button from a group by breaking the group's shared boundary (or 'sticking out').<br>
+                        The expectation of a 'pop-up' effect for active buttons may also be used to distinguish disabled buttons.
+                    </p>
+                    <div class="button-container">
+                        <button class="lib-button" id="button-two">Click Me</button>
+                        <button class="lib-button" id="button-two">Click Me</button>
+                        <button class="lib-button" id="button-two" disabled>Click Me</button>
+                        <button class="lib-button" id="button-two">Click Me</button>
+                    </div>
+                    <p>
+                        While this is satisfying for desktop mouse users, it goes without saying that these button effects have no value to mobile and keyboard-only users.
+                    </p>
+                    <p>
+                        Nonetheless, lets combine with some colour coding...
+                    </p>
+                    <div class="button-container">
+                        <button class="lib-button" id="button-two">Click Me</button>
+                        <button class="lib-button" id="button-two" disabled>Click Me</button>
+                        <button class="lib-button" id="button-two">Click Me</button>
+                        <button class="lib-button" id="button-two">Click Me</button>
+                    </div>
+                    <p>
+                        This is achieved as follows:
+                    </p>
+                    <pre><code>
+#button-two {
+    border: solid black 1px;
+}
+
+#button-two:hover {
+    border-bottom: 6px black solid;
+    transform: translateY(-2.5px);
+}
+
+#button-two:active {
+    border-bottom: 2px black solid;
+    transform: translateY(-0.5px);
+}
+
+#button-two:disabled {
+    border: solid black 1px;
+    background-color: lightgrey;
+    color: #666;
+    transform: translateY(0px);
+}
+                    </code></pre>
                 </div>
             </div>
             <div class="one-third-container">
