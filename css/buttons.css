@@ -31,28 +31,27 @@
 
 #button-two {
     border: solid black 1px;
+    border-bottom: 2px black solid;
 }
 
 #button-two:hover {
     border-bottom: 6px black solid;
-    transform: translateY(-2.5px);
+    transform: translateY(-2px);
 }
 
 #button-two:active {
     border-bottom: 2px black solid;
-    transform: translateY(-0.5px);
+    transform: translateY(0px);
 }
 
 #button-two:disabled {
-    border: solid black 1px;
+    border-bottom: 2px black solid;
     transform: translateY(0px);
 }
 
 #button-two:nth-child(2):disabled {
-    border: solid black 1px;
     background-color: lightgrey;
     color: #666;
-    transform: translateY(0px);
 }
 
 /* Button 3 */

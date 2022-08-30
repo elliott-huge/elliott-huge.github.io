@@ -41,10 +41,12 @@
                     <p>
                         Take care when changing live border values such as with <code>:hover</code> or <code>:active</code>, as this can bump neighbouring block elements around.
                     </p>
-                    <h2>2. Square, Presents on Hover, Depressible</h2>
+                    <h2>2. Square, Pop-up on Hover, Depressible</h2>
                     <p>
-                        An adaptation of gov.uk's design which distinguishes a hovered button from a group by breaking the group's shared boundary (or 'sticking out').<br>
-                        The expectation of a 'pop-up' effect for active buttons may also be used to distinguish disabled buttons.
+                        This adaptation of button distinguishes a hovered button from its neighbours by breaking their shared boundary (it sticks out).
+                    </p>
+                    <p>
+                        Such behaviour forms a user expectation for all 'normal' buttons in a group to pop-up. We can negate this behaviour to help signify disabled buttons:
                     </p>
                     <div class="button-container">
                         <button class="lib-button" id="button-two">Click Me</button>
@@ -53,10 +55,10 @@
                         <button class="lib-button" id="button-two">Click Me</button>
                     </div>
                     <p>
-                        While this is satisfying for desktop mouse users, it goes without saying that these button effects have no value to mobile and keyboard-only users.
+                        While the pop-up behaviour is satisfying for desktop mouse-users, mobile and keyboard-only users inability to hover means they wont encounter value here.
                     </p>
                     <p>
-                        Nonetheless, lets combine with some colour coding...
+                        Combining the pop-up and disabled pop-up behaviour with colour coding leads to a less jarring result:
                     </p>
                     <div class="button-container">
                         <button class="lib-button" id="button-two">Click Me</button>
@@ -70,20 +72,21 @@
                     <pre><code>
 #button-two {
     border: solid black 1px;
+    border-bottom: 2px black solid;
 }
 
 #button-two:hover {
     border-bottom: 6px black solid;
-    transform: translateY(-2.5px);
+    transform: translateY(-2px);
 }
 
 #button-two:active {
     border-bottom: 2px black solid;
-    transform: translateY(-0.5px);
+    transform: translateY(0px);
 }
 
 #button-two:disabled {
-    border: solid black 1px;
+    border-bottom: 2px black solid;
     background-color: lightgrey;
     color: #666;
     transform: translateY(0px);
