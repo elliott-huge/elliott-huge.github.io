@@ -220,6 +220,7 @@ pre code {
     padding: 20px;
   }
 
+
 /* ==Screen Size Queries== */
 
 @media (max-width: 640px) {
@@ -234,10 +235,6 @@ pre code {
 
     .two-thirds-container, .one-third-container, .footer-column {
         width: 100%;
-    }
-
-    .related-content-block {
-        margin-top: 0;
     }
 
     p, li, code {
