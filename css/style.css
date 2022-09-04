@@ -126,6 +126,8 @@ nav {
     flex-wrap: wrap;
     justify-content: right;
     background-color: #111;
+    border-radius: 0 0 50px 50px;
+    padding: 0 15px;
 }
 
 nav a {
@@ -150,6 +152,7 @@ nav a:hover {
 footer {
     background-color: #111;
     padding: 40px 0;
+    border-radius: 50px 50px 0 0;
 }
 
 .footer-content {
