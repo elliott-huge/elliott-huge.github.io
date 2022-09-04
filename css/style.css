@@ -121,13 +121,16 @@ h1 + p {
 /* ==Nav Elements== */
 
 nav {
+    background-color: #111;
+    border-radius: 0 0 40px 40px;
+}
+
+#nav-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
-    background-color: #111;
-    border-radius: 0 0 50px 50px;
-    padding: 0 15px;
+    padding: 0 20px;;
 }
 
 nav a {
@@ -152,7 +155,7 @@ nav a:hover {
 footer {
     background-color: #111;
     padding: 40px 0;
-    border-radius: 50px 50px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 
 .footer-content {
@@ -227,7 +230,7 @@ pre code {
 /* ==Screen Size Queries== */
 
 @media (max-width: 640px) {
-    nav {
+    #nav-container {
         justify-content: center;
     }
 
