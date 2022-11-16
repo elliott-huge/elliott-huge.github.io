@@ -137,7 +137,7 @@ nav {
 nav a {
     font-family: 'Oxygen', sans-serif;
     text-decoration: none;
-    border-right: #ccc;
+    border-right: 3px solid #ccc;
     color: #ccc;
     font-size: 2rem;
     text-align: center;
