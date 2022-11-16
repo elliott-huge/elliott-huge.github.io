@@ -127,21 +127,22 @@ nav {
 
 #nav-container {
     display: flex;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
-    padding: 0 20px;
+    padding: 0 64px;
 }
 
 nav a {
     font-family: 'Oxygen', sans-serif;
     text-decoration: none;
+    border-right: #ccc;
     color: #ccc;
     font-size: 2rem;
     text-align: center;
 
-    padding: 10px 10px;
-    margin-right: 20px;
+    padding: 0 64px;
 }
 
 nav a:hover {
@@ -236,7 +237,8 @@ pre code {
 
     nav a {
         flex-basis: 51%;
-        margin-right: 0;
+        margin: 16px 0;
+        border: none;
     }
 
     .two-thirds-container, .one-third-container, .footer-column {
