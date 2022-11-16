@@ -65,16 +65,16 @@ a {
     color: #3657ba;
 }
 
-a:hover {
+a:hover, a:focus {
     color: #202667;
     text-decoration-thickness: 3px;
 }
 
-h1 a:hover{
+h1 a:hover, h1 a:focus{
     text-decoration-thickness: 5px;
 }
 
-h2 a:hover {
+h2 a:hover, h2 a:focus {
     text-decoration-thickness: 4px;
 }
 
@@ -178,7 +178,7 @@ footer {
     padding-inline-start: 15px;
 }
 
-.footer-content a:hover {
+.footer-content a:hover, .footer-content a:focus {
     color:#eee;
 }
 
@@ -201,7 +201,7 @@ footer {
     height: 40px;
 }
 
-#social-media img:hover {
+#social-media img:hover, #social-media img:focus {
     opacity: 85%;
 }
 
