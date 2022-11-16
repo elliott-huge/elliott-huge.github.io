@@ -201,7 +201,7 @@ footer {
     height: 40px;
 }
 
-#social-media img:hover, #social-media img:focus {
+#social-media img:hover, #social-media a:focus img {
     opacity: 85%;
 }
 
