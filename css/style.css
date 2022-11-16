@@ -132,6 +132,7 @@ nav {
     flex-wrap: wrap;
     justify-content: right;
     padding: 0 64px;
+    min-height: 64px;
 }
 
 nav a {
