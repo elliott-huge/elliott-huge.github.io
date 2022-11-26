@@ -69,6 +69,7 @@ li:before {
     font-family: 'IBM Plex Mono', monospace;
     content: '>';
     margin-right: 0.5rem;
+    vertical-align: text-bottom;
 }
 
 a {
