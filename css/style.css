@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Oxygen', sans-serif;
-    src: "https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap";
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @font-face {
     font-family: 'IBM Plex Mono', monospace;
     src: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Oxygen:wght@700&display=swap";
@@ -11,7 +8,7 @@
 /* ==General== */
 
 h1, h2, h3, p, li, code {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     color: #333;
     font-size: 1rem;
     text-underline-offset: 3px;
@@ -68,9 +65,9 @@ li {
     margin-bottom: 15px;
 }
 
-/* strong {
-    font-weight: ;
-} */
+strong {
+    font-weight: 500;
+}
 
 li:before {
     font-family: 'IBM Plex Mono', monospace;
