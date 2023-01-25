@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../res/icon.png" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="../script/ping.js"></script>
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
@@ -17,6 +19,35 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="content"></div>
+    <div class="content">
+      <div class="panel">
+        <div class="panel-content">
+          <h2>Key links</h2>
+          <h3>
+            <a href="https://www.messenger.com/">Messenger</a>
+          </h3>
+          <h3>
+            <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+          </h3>
+          <h3>
+            <a href="https://mail.google.com/mail/u/0/">gMail</a>
+          </h3>
+          <br>
+          <h3 id="visits"></h3>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-content">
+          <button id="ping" onclick="pingServers()">Ping Servers</button>
+          <div id="ping-panel"></div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    function cb(response) {
+      document.getElementById('visits').innerText = "Visit number: " + response.value;
+    }
+  </script>
+  <script async src="https://api.countapi.xyz/hit/elliotthuge.dev/visits?callback=cb"></script>
 </html>
