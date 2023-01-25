@@ -1,0 +1,76 @@
+.lib-button {
+    color: white;
+    background-color:darkcyan;
+    font-size: 24px;
+    padding: 8px 16px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    padding: 0 20px;
+    background-color: #ccc;
+    border: 1px solid #111;
+}
+
+/* Button 1 */
+
+#button-one {
+    border: solid black 1px;
+    border-bottom: 6px black solid;
+}
+
+#button-one:active {
+    border-bottom: 2px black solid;
+    transform: translateY(2px);
+}
+
+/* Button 2 */
+
+#button-two {
+    border: solid black 1px;
+    border-bottom: 2px black solid;
+}
+
+#button-two:hover {
+    border-bottom: 6px black solid;
+    transform: translateY(-2px);
+}
+
+#button-two:active {
+    border-bottom: 2px black solid;
+    transform: translateY(0px);
+}
+
+#button-two:disabled {
+    border-bottom: 2px black solid;
+    transform: translateY(0px);
+}
+
+#button-two:nth-child(2):disabled {
+    background-color: lightgrey;
+    color: #666;
+}
+
+/* Button 3 */
+
+#button-three {
+    border: solid black 1px;
+}
+
+#button-three:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 1px black;
+    box-shadow: inset 0px 0px 0px 1px black;
+}
+
+#button-three:active {
+    border: solid black 2px;
+}
+
+/* Button 4 */
+
+
+
+/* Button 5 */

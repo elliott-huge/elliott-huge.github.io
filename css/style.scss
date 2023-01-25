@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@font-face {
+    font-family: 'IBM Plex Mono', monospace;
+    src: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Oxygen:wght@700&display=swap";
+}
+
+
+/* ==General== */
+
+h1, h2, h3, p, li, code {
+    font-family: Roboto, sans-serif;
+    color: #333;
+    font-size: 1rem;
+    text-underline-offset: 3px;
+}
+
+body {
+    background-color: rgb(239, 239, 239);
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    line-height: 1;
+    font-size: 24px;
+}
+
+h3 {
+    line-height: 1.4;
+    font-size: 21px;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+span {
+    vertical-align: text-bottom;
+    margin-right: 8px;
+}
+
+code {
+    line-height: 1.3;
+    font-size: 19px;
+    background-color: #ccc;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+p {
+    line-height: 1.3;
+    font-size: 19px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 1.2;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+li:before {
+    font-family: 'IBM Plex Mono', monospace;
+    content: '>';
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
+}
+
+a {
+    color: #3657ba;
+}
+
+a:hover, a:focus {
+    color: #202667;
+    text-decoration-thickness: 3px;
+}
+
+h1 a:hover, h1 a:focus{
+    text-decoration-thickness: 5px;
+}
+
+h2 a:hover, h2 a:focus {
+    text-decoration-thickness: 4px;
+}
+
+h1 + p {
+    margin-top: 0px;
+}
+
+
+/* ==Structural== */
+
+.content, nav, footer {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    min-height: 95vh;
+    margin-bottom: 20px;
+}
+
+.two-thirds-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+}
+
+.one-third-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+}
+
+.text-content-block {
+    padding: 0 15px;
+}
+
+.related-content-block {
+    margin-top: 60px;
+    padding: 0 15px 0 15px;
+}
+
+
+/* ==Nav Elements== */
+
+nav {
+    background-color: #111;
+    border-radius: 0 0 40px 40px;
+}
+
+#nav-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 0 64px;
+    min-height: 64px;
+}
+
+nav a {
+    font-family: 'Oxygen', sans-serif;
+    text-decoration: none;
+    border-right: 3px solid #ccc;
+    color: #ccc;
+    font-size: 2rem;
+    text-align: center;
+
+    padding: 0 16px;
+}
+
+nav a:last-child {
+    border: none;
+}
+
+nav a:hover, nav a:focus {
+    color: #eee;
+    text-decoration: underline;
+}
+
+
+/* ==Footer Elements== */
+
+footer {
+    background-color: #111;
+    padding: 40px 0;
+    border-radius: 40px 40px 0 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-content a, footer p, footer li {
+    color: #ccc;
+}
+
+.footer-content ul {
+    padding-inline-start: 15px;
+}
+
+.footer-content a:hover, .footer-content a:focus {
+    color:#eee;
+}
+
+.footer-content li {
+    margin-bottom: 10px;
+}
+
+.footer-column {
+    width: 320px;
+    padding: 0 50px;
+}
+
+#social-media {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#social-media img {
+    opacity: 50%;
+    height: 40px;
+}
+
+#social-media img:hover, #social-media a:focus img {
+    opacity: 85%;
+}
+
+
+/* ==Other== */
+
+#image-roll {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image-roll img {
+    object-fit: cover;
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+pre {
+    margin: -15px 0;
+}
+
+pre code {
+    background-color: #ccc;
+    border: 1px solid #111;
+    display: block;
+    padding: 20px;
+  }
+
+
+/* ==Screen Size Queries== */
+
+@media (max-width: 640px) {
+    #nav-container {
+        justify-content: center;
+    }
+
+    nav a {
+        flex-basis: 51%;
+        margin: 16px 0;
+        border: none;
+    }
+
+    .two-thirds-container, .one-third-container, .footer-column {
+        width: 100%;
+    }
+
+    p, li, code {
+        font-size: 16px;
+    }
+
+    ul {
+        padding-inline-start: 15px;
+    }
+
+    footer {
+        padding: 40px 0 80px 0;
+    }
+
+    #image-roll {
+        justify-content: center;
+    }
+}
+
+
+/* ==Accessibility== */
+
+.content a:focus {
+    background-color: yellow;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.content ::selection {
+    background-color: yellow;
+    color: black;
+}

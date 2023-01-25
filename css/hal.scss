@@ -1,0 +1,66 @@
+#hal-container {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+}
+
+#hal-outline {
+    width: 380px;
+    height: 380px;
+    background-color: black;
+    border: silver solid 20px;
+}
+
+#hal-white {
+    width: 380px;
+    height: 380px;
+    top: 20px;
+    left: 20px;
+    background: repeating-linear-gradient(black, darkred 6.25%);
+    background-size: 200% 200%;
+    opacity: 0.15;
+
+    -webkit-animation: Animation 5s linear infinite;
+    -moz-animation: Animation 5s linear infinite;
+    animation: Animation 5s linear infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position: 0% 0%;}
+    100%{background-position: 0% 25%;}
+}
+
+@-moz-keyframes Animation {
+    0%{background-position: 0% 0%;}
+    100%{background-position: 0% 25%;}
+}
+
+@keyframes Animation {
+    0%{background-position: 0% 0%;}
+    100%{background-position: 0% 25%;}
+}
+
+#hal-iris {
+    width: 300px;
+    height: 300px;
+    /* background-color: darkred; */
+    background: radial-gradient(darkred 30%, transparent 75%);
+
+    top: 60px;
+    left: 60px;
+}
+
+#hal-pupil {
+    width: 30px;
+    height: 30px;
+    background-color: darkorange;
+    background: radial-gradient(darkorange 30%, darkred 90%);
+    top: 195px;
+    left: 195px;
+}
