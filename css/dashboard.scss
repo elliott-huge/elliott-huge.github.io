@@ -6,6 +6,7 @@
     justify-content: space-around;
     align-items: center;
     height: fit-content;
+    flex-wrap: wrap;
 }
 
 .panel {
@@ -13,7 +14,7 @@
     background-color: white;
     width: fit-content;
     border-radius: 12px;
-    box-shadow: 0px 5px 10px black;
+    box-shadow: 0px 5px 10px #333;
     overflow: hidden;
     min-height: 256px;
     min-width: 256px;
