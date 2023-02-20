@@ -5,7 +5,6 @@
   gap: 16px;
   justify-content: space-around;
   align-items: center;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   flex-wrap: wrap;
@@ -74,7 +73,6 @@ button:hover, button:focus {
 #datetime {
   position: fixed;
   text-align: right;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 16px;
