@@ -2,46 +2,63 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="../res/icon.png"/>
-        <link rel="stylesheet" href="../css/style.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <meta name="description" content="Misc' personal projects"/>
-        <title>Elliott's Projects</title>
-    </head>
-    <body>
-        {% include navigation.html %}
-        <div class="content">
-            <div class="two-thirds-container">
-                <div class="text-content-block">
-                    <h1>Projects</h1>
-                    <h2><a href="/html/this_website">Designing this website</a></h2>
-                    <p>
-                        <i>HTML & CSS (Javascript still to come)</i> - Ongoing<br>
-                        In the interests of usability, this website is designed by taking inspiration from the UK Government Design Service.
-                    </p>
-                    <h2><a href="https://www.bluebelllane.co.uk/">Bluebell Lane Floristry's website (external)</a></h2>
-                    <p>
-                        <i>Adobe Illustrator, HTML, CSS, and Javascript</i> - April 2022<br>
-                        A local florist was in need of a simple static website to help showcase her business.
-                    </p>
-                    <h2><a href="https://client.dreamingspires.dev/mat_dp_core/">Documentation for an open-source linear programming library (external)</a></h2>
-                    <p>
-                        <i>MarkDown, Python, Linear Programming</i> - March 2022<br>
-                        Mat-dp Core is an open-source linear programming library designed to support the research of optimal resource allocation in the context of environmental effects, such as greenhouse gas production.
-                    </p>
-                    <h2><a href="https://github.com/elliott-huge/ChangeCalculator">A recursive change calculator (external)</a></h2>
-                    <p>
-                        <i>Python</i> - October 2021<br>
-                        A small experiment a recursive loop to find coins that sum to an exact value - probably quite inefficient!
-                    </p>
-                </div>
-            </div>
+  <head>
+    {% include gtm_top.html %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../res/icon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Misc' personal projects" />
+    <title>Elliott's Projects</title>
+  </head>
+  <body>
+    {% include gtm_bottom.html %}
+    {% include navigation.html %}
+    <div class="content">
+      <div class="two-thirds-container">
+        <div class="text-content-block">
+          <h1>Projects</h1>
+          <h2>
+            <a href="/html/this_website">Designing this website</a>
+          </h2>
+          <p>
+            <i>HTML & CSS (Javascript still to come)</i>
+            - Ongoing<br>
+            In the interests of usability, this website is designed by taking inspiration from the UK Government Design Service.
+          </p>
+          <h2>
+            <a href="https://www.bluebelllane.co.uk/">Bluebell Lane Floristry's website (external)</a>
+          </h2>
+          <p>
+            <i>Adobe Illustrator, HTML, CSS, and Javascript</i>
+            - April 2022<br>
+            A local florist was in need of a simple static website to help showcase her business.
+          </p>
+          <h2>
+            <a href="https://client.dreamingspires.dev/mat_dp_core/">Documentation for an open-source linear programming library (external)</a>
+          </h2>
+          <p>
+            <i>MarkDown, Python, Linear Programming</i>
+            - March 2022<br>
+            Mat-dp Core is an open-source linear programming library designed to support the research of optimal resource allocation in the context of environmental effects, such as greenhouse gas production.
+          </p>
+          <h2>
+            <a href="https://github.com/elliott-huge/ChangeCalculator">A recursive change calculator (external)</a>
+          </h2>
+          <p>
+            <i>Python</i>
+            - October 2021<br>
+            A small experiment a recursive loop to find coins that sum to an exact value - probably quite inefficient!
+          </p>
         </div>
-        {% include footer.html %}
-    </body>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
 </html>
