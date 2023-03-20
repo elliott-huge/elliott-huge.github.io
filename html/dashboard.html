@@ -31,7 +31,7 @@
           const date = document.getElementById("date");
           const d = new Date();
           const ft = d.toLocaleTimeString();
-          const fd = d.toLocaleDateString();
+          const fd = d.toLocaleDateString('en-GB');
           time.textContent = ft;
           date.textContent = fd;
         }
