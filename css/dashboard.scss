@@ -23,6 +23,8 @@
 .panel-content {
     padding: 24px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -66,20 +68,4 @@ button:hover, button:focus {
     color: black;
     background-color: yellow;
     text-decoration: underline;
-}
-
-#datetime {
-    position: fixed;
-    text-align: right;
-    width: fit-content;
-    padding: 16px;
-    top: 0;
-    right: 0;
-}
-
-@media (max-width: 800px) {
-    #datetime {
-        position: relative;
-        display: inline;
-    }
 }

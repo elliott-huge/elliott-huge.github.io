@@ -21,23 +21,6 @@
   </head>
   <body>
     {% include gtm_bottom.html %}
-    <div id="datetime">
-      <h3 id="time"></h3>
-      <h3 id="date"></h3>
-      <script>
-        `use strict`;
-        function refreshTime() {
-          const time = document.getElementById("time");
-          const date = document.getElementById("date");
-          const d = new Date();
-          const ft = d.toLocaleTimeString();
-          const fd = d.toLocaleDateString('en-GB');
-          time.textContent = ft;
-          date.textContent = fd;
-        }
-        setInterval(refreshTime, 1000);
-      </script>
-    </div>
     <div class="content">
       <div class="panel">
         <div class="panel-content">
@@ -61,10 +44,26 @@
       </div>
       <div class="panel">
         <div id="middle-panel" class="panel-content">
-          <h2 id="visits"></h2>
           <p>
             <i>Weniger aber besser</i>
           </p>
+          <div id="datetime">
+            <h3 id="time"></h3>
+            <h3 id="date"></h3>
+            <script>
+              `use strict`;
+              function refreshTime() {
+                const time = document.getElementById("time");
+                const date = document.getElementById("date");
+                const d = new Date();
+                const ft = d.toLocaleTimeString();
+                const fd = d.toLocaleDateString('en-GB');
+                time.textContent = ft;
+                date.textContent = fd;
+              }
+              setInterval(refreshTime, 1000);
+            </script>
+          </div>
         </div>
       </div>
       <div class="panel">
